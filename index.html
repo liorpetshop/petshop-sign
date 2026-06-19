@@ -3,83 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pet Shop Ra'anana</title>
+<title>Pet Shop</title>
 
 <style>
 body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:linear-gradient(135deg,#ffe600,#ffd500,#d71920);
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+  margin:0;
+  height:100vh;
+  font-family:Arial,sans-serif;
+  background:linear-gradient(135deg,#ffe600,#ffcc00,#d71920);
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
-
 .card{
-    width:90%;
-    max-width:900px;
-    background:white;
-    border-radius:35px;
-    box-shadow:0 20px 50px rgba(0,0,0,0.3);
-    padding:40px;
-    text-align:center;
-    border:8px solid #d71920;
+  width:90%;
+  max-width:900px;
+  background:white;
+  border:8px solid #d71920;
+  border-radius:35px;
+  padding:45px;
+  text-align:center;
+  box-shadow:0 20px 50px rgba(0,0,0,.35);
 }
-
 .logo{
-    width:70%;
-    max-width:450px;
-    margin-bottom:20px;
+  width:65%;
+  max-width:480px;
+  margin-bottom:40px;
 }
-
 .title{
-    color:#d71920;
-    font-size:56px;
-    font-weight:bold;
-    margin-bottom:30px;
+  font-size:54px;
+  font-weight:900;
+  color:#d71920;
+  margin-bottom:35px;
 }
-
-.row{
-    background:#f4f4f4;
-    border-radius:25px;
-    padding:25px;
-    margin:20px 0;
-    display:flex;
-    justify-content:space-between;
-    font-size:38px;
-    font-weight:bold;
+.message{
+  font-size:50px;
+  font-weight:900;
+  line-height:1.6;
+  color:#111;
 }
-
-.closed{
-    color:#d71920;
+.time{
+  margin:35px auto;
+  background:#d71920;
+  color:white;
+  border-radius:30px;
+  padding:25px;
+  font-size:58px;
+  font-weight:900;
 }
-
+.sorry{
+  margin-top:30px;
+  font-size:40px;
+  color:#d71920;
+  font-weight:900;
+}
 .footer{
-    margin-top:35px;
-    background:#222;
-    color:white;
-    border-radius:25px;
-    padding:20px;
-    font-size:28px;
-    line-height:1.8;
+  margin-top:35px;
+  background:#222;
+  color:white;
+  border-radius:25px;
+  padding:18px;
+  font-size:30px;
 }
-
-.notice{
-    margin-top:20px;
-    color:#d71920;
-    font-size:28px;
-    font-weight:bold;
-}
-
 </style>
 
 <script>
 setInterval(function(){
-    location.reload();
+  location.reload();
 },30000);
 </script>
-
 </head>
 
 <body>
@@ -88,32 +80,23 @@ setInterval(function(){
 
 <img class="logo" src="IMG_1307.jpeg">
 
-<div class="title">
-שעות פתיחה
+<div class="title">לקוחות יקרים</div>
+
+<div class="message">
+החנות תיפתח היום<br>
+בשעה
 </div>
 
-<div class="row">
-<span>א'-ה'</span>
-<span>09:00 - 20:00</span>
+<div class="time">
+15:00 - 20:00
 </div>
 
-<div class="row">
-<span>יום ו'</span>
-<span>09:00 - 15:00</span>
-</div>
-
-<div class="row">
-<span>שבת</span>
-<span class="closed">סגור</span>
+<div class="sorry">
+עמכם הסליחה
 </div>
 
 <div class="footer">
-☎ 09-9743003<br>
-📍 אחוזה 130, רעננה
-</div>
-
-<div class="notice">
-חנות שחיות אוהבות 🐾
+☎ 09-9743003 &nbsp; | &nbsp; 📍 אחוזה 130, רעננה
 </div>
 
 </div>
