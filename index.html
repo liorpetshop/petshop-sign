@@ -2,9 +2,8 @@
 <html lang="he" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="30">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pet Shop Sign</title>
+<title>Pet Shop Ra’anana</title>
 
 <style>
 *{box-sizing:border-box}
@@ -12,88 +11,79 @@ body{
   margin:0;
   height:100vh;
   font-family:Arial, sans-serif;
-  background:linear-gradient(135deg,#b40000,#e60000,#8b0000);
-  color:white;
+  background:linear-gradient(135deg,#ffe600 0%,#ffd000 35%,#d71920 100%);
   display:flex;
-  align-items:center;
   justify-content:center;
+  align-items:center;
   overflow:hidden;
 }
-
-.sign{
+.card{
   width:92%;
   height:88%;
-  border-radius:35px;
-  padding:35px;
-  background:rgba(0,0,0,0.18);
-  box-shadow:0 0 35px rgba(0,0,0,.35);
-  text-align:center;
-}
-
-.logo{
-  font-size:74px;
-  font-weight:900;
-  letter-spacing:3px;
-  text-shadow:4px 4px 8px #000;
-}
-
-.subtitle{
-  font-size:34px;
-  margin-top:5px;
-  font-weight:bold;
-}
-
-.title{
-  margin:35px 0 25px;
-  font-size:58px;
-  font-weight:900;
-}
-
-.row{
   background:white;
-  color:#111;
-  margin:18px auto;
-  width:88%;
-  border-radius:40px;
-  padding:18px 30px;
+  border-radius:34px;
+  padding:35px;
+  text-align:center;
+  box-shadow:0 20px 50px rgba(0,0,0,.35);
+  border:8px solid #d71920;
+}
+.logo{
+  width:70%;
+  max-width:650px;
+  margin-bottom:25px;
+}
+.title{
+  font-size:62px;
+  font-weight:900;
+  color:#d71920;
+  margin:10px 0 30px;
+}
+.row{
   display:flex;
   justify-content:space-between;
   align-items:center;
+  background:#f7f7f7;
+  border-radius:28px;
+  padding:22px 36px;
+  margin:18px auto;
+  width:86%;
   font-size:42px;
   font-weight:900;
+  color:#111;
+  border:3px solid #eee;
 }
-
-.closed{
-  color:#c40000;
-}
-
+.closed{color:#d71920}
 .footer{
-  position:absolute;
-  bottom:28px;
-  left:4%;
-  right:4%;
+  margin-top:35px;
   background:#111;
-  border-radius:30px;
+  color:white;
+  border-radius:26px;
   padding:22px;
-  font-size:34px;
-  font-weight:bold;
+  font-size:32px;
+  font-weight:800;
   display:flex;
   justify-content:space-around;
+  gap:15px;
 }
-
-.paw{
-  font-size:44px;
+.notice{
+  margin-top:25px;
+  font-size:28px;
+  color:#d71920;
+  font-weight:bold;
 }
 </style>
+
+<script>
+setInterval(function(){
+  window.location.reload();
+}, 30000);
+</script>
 </head>
 
 <body>
+<div class="card">
 
-<div class="sign">
-
-  <div class="paw">🐾</div>
-  <div class="logo">PET SHOP</div>
-  <div class="subtitle">חנות שחיות אוהבות</div>
+  <img class="logo" src="logo.jpeg" alt="Pet Shop Logo">
 
   <div class="title">שעות פתיחה</div>
 
@@ -112,13 +102,13 @@ body{
     <span class="closed">סגור</span>
   </div>
 
-</div>
+  <div class="footer">
+    <span>☎ 09-9743003</span>
+    <span>📍 אחוזה 130, רעננה</span>
+  </div>
 
-<div class="footer">
-  <span>☎ 09-9743003</span>
-  <span>📍 כפר סבא</span>
-  <span>🐶🐱</span>
-</div>
+  <div class="notice">חנות שחיות אוהבות 🐾</div>
 
+</div>
 </body>
 </html>
