@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pet Shop</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(135deg,#b40000,#d50000);
+    color:white;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    text-align:center;
+}
+
+.logo{
+    font-size:80px;
+    font-weight:900;
+    letter-spacing:4px;
+    text-shadow:3px 3px 10px rgba(0,0,0,.4);
+}
+
+.subtitle{
+    font-size:32px;
+    margin-bottom:40px;
+}
+
+.title{
+    font-size:55px;
+    margin-bottom:40px;
+}
+
+.row{
+    background:white;
+    color:#222;
+    border-radius:30px;
+    padding:25px;
+    margin:20px 0;
+    display:flex;
+    justify-content:space-between;
+    font-size:42px;
+    font-weight:bold;
+}
+
+.closed{
+    color:#c40000;
+}
+
+.footer{
+    margin-top:50px;
+    font-size:32px;
+}
+
+.address{
+    margin-top:20px;
+    font-size:28px;
+}
+
+</style>
+
+<script>
+setInterval(function(){
+    location.reload();
+},30000);
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">PET SHOP</div>
+<div class="subtitle">חנות שחיות אוהבות</div>
+
+<div class="title">שעות פתיחה</div>
+
+<div class="row">
+<span>א'-ה'</span>
+<span>09:00 - 20:00</span>
+</div>
+
+<div class="row">
+<span>ו'</span>
+<span>09:00 - 15:00</span>
+</div>
+
+<div class="row">
+<span>שבת</span>
+<span class="closed">סגור</span>
+</div>
+
+<div class="footer">
+☎ 09-9743003
+</div>
+
+<div class="address">
+📍 אחוזה 130, רעננה
+</div>
+
+</div>
+
+</body>
+</html>
