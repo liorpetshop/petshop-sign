@@ -1,67 +1,123 @@
 <!DOCTYPE html>
-<html dir="rtl">
+<html lang="he" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="refresh" content="30">
-<title>Pet Shop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Shop Sign</title>
 
 <style>
+*{box-sizing:border-box}
 body{
-    margin:0;
-    background:#d62828;
-    color:white;
-    font-family:Arial;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    text-align:center;
+  margin:0;
+  height:100vh;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(135deg,#b40000,#e60000,#8b0000);
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
 }
 
-.box{
-    width:90%;
+.sign{
+  width:92%;
+  height:88%;
+  border-radius:35px;
+  padding:35px;
+  background:rgba(0,0,0,0.18);
+  box-shadow:0 0 35px rgba(0,0,0,.35);
+  text-align:center;
 }
 
-h1{
-    font-size:80px;
-    margin:20px;
+.logo{
+  font-size:74px;
+  font-weight:900;
+  letter-spacing:3px;
+  text-shadow:4px 4px 8px #000;
 }
 
-h2{
-    font-size:50px;
+.subtitle{
+  font-size:34px;
+  margin-top:5px;
+  font-weight:bold;
 }
 
-.hours{
-    font-size:42px;
-    line-height:1.8;
+.title{
+  margin:35px 0 25px;
+  font-size:58px;
+  font-weight:900;
 }
 
-.phone{
-    margin-top:40px;
-    font-size:32px;
+.row{
+  background:white;
+  color:#111;
+  margin:18px auto;
+  width:88%;
+  border-radius:40px;
+  padding:18px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:42px;
+  font-weight:900;
+}
+
+.closed{
+  color:#c40000;
+}
+
+.footer{
+  position:absolute;
+  bottom:28px;
+  left:4%;
+  right:4%;
+  background:#111;
+  border-radius:30px;
+  padding:22px;
+  font-size:34px;
+  font-weight:bold;
+  display:flex;
+  justify-content:space-around;
+}
+
+.paw{
+  font-size:44px;
 }
 </style>
-
 </head>
 
 <body>
 
-<div class="box">
+<div class="sign">
 
-<h1>PET SHOP</h1>
+  <div class="paw">🐾</div>
+  <div class="logo">PET SHOP</div>
+  <div class="subtitle">חנות שחיות אוהבות</div>
 
-<h2>שעות פתיחה</h2>
+  <div class="title">שעות פתיחה</div>
 
-<div class="hours">
-א'-ה' 09:00-20:00<br>
-ו' 09:00-13:00<br>
-שבת סגור
+  <div class="row">
+    <span>א׳-ה׳</span>
+    <span>09:00 - 20:00</span>
+  </div>
+
+  <div class="row">
+    <span>יום ו׳</span>
+    <span>09:00 - 15:00</span>
+  </div>
+
+  <div class="row">
+    <span>שבת</span>
+    <span class="closed">סגור</span>
+  </div>
+
 </div>
 
-<div class="phone">
-09-9743003
-</div>
-
+<div class="footer">
+  <span>☎ 09-9743003</span>
+  <span>📍 כפר סבא</span>
+  <span>🐶🐱</span>
 </div>
 
 </body>
